@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- OPTIMIZACIÓN MÓVIL CRÍTICA -->
+    <!-- viewport-fit=cover: Usa toda la pantalla en iPhones con notch -->
+    <!-- maximum-scale=1: Evita zoom accidental al hacer doble tap en botones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- Hace que la app se sienta nativa (oculta barras del navegador si se instala) -->
+    <meta name="theme-color" content="#171717" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <title>Dashboard</title>
+    
+    <!-- Preconexión a fuentes o dominios externos si los hubiera para ganar milisegundos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body class="bg-background text-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
